@@ -1,7 +1,7 @@
 pull_request_rules:
   - name: controlled direct target merge observation
     conditions:
-      - number = 2
+      - number = 3
       - author = hardcodepunk
     actions:
       merge:
