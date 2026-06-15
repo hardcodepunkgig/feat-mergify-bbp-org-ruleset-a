@@ -1,8 +1,8 @@
 pull_request_rules:
-  - name: controlled comment action
+  - name: controlled direct target merge observation
     conditions:
-      - label = bbp-trigger
+      - number = 2
+      - author = hardcodepunk
     actions:
-      comment:
-        message: |
-          controlled workflow automation fired for PR #{{number}} by {{author}}
+      merge:
+        method: squash
